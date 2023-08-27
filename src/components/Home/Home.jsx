@@ -1,6 +1,9 @@
 import React from "react";
 import "./home.css";
+import Forms from "../Forms/Forms";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate=useNavigate()
   const imgarr = [
     "Group 5.png",
     "Group 6.png",
@@ -19,7 +22,7 @@ const Home = () => {
           </h1>
           <h1 className=" text-4xl font-semibold  ">It’s a win win!</h1>
           <div className=" btnCont mt-12 flex justify-between w-3/5">
-            <button className=" h-12 px-12 rounded-2xl text-lg text-white font-medium">
+            <button onClick={()=>navigate("/form")} className=" h-12 px-12 rounded-2xl text-lg text-white font-medium">
               Find a Mentor
             </button>
             <button className=" h-12 px-12 rounded-2xl text-lg text-white font-medium">
@@ -52,6 +55,7 @@ const Home = () => {
             <img className=" w-52 h-full" src={`./${c}`} alt="" />
           ))}
         </div>
+       
       </div>
     </>
   );

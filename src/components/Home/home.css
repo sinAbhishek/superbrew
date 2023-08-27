@@ -1,0 +1,19 @@
+.home {
+  height: 938px;
+  background: linear-gradient(
+    180deg,
+    #c0e3fc 0%,
+    rgba(123, 226, 195, 0.8) 100%
+  );
+}
+.imageGirl {
+  width: 628px;
+  height: 628px;
+}
+.btnCont > button {
+  background-color: #358279;
+}
+.expertise {
+  height: 732px;
+  background-color: #c0e3fc;
+}
